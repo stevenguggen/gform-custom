@@ -1,6 +1,6 @@
 <?php
 
-  namespace VacancyToolbox\Shortcodes;
+  namespace GformCustom\Shortcodes;
 
   class Shortcode {
 

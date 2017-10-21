@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Plugin Name: My Custom Plugin
+ * Plugin Name: Gravity Forms Custom Plugin
  * Plugin URI: ''
- * Description: My custom plugin.
+ * Description: Gravity Forms custom plugin.
  * Version: 0.1
  * Author: Jay Long
  * Author URI:
@@ -21,18 +21,18 @@
  * GNU General Public License for more details.
  */
 
-define('MY_PLUGIN_URL', plugin_dir_url( __FILE__ ));
-define('MY_PLUGIN_PATH', plugin_dir_path( __FILE__ ));
-define('MY_PLUGIN_FILE',  'my_plugin.php');
-define('MY_PLUGIN_DEV_MODE', true);
+define('GFORM_CUSTOM_URL', plugin_dir_url( __FILE__ ));
+define('GFORM_CUSTOM_PATH', plugin_dir_path( __FILE__ ));
+define('GFORM_CUSTOM_FILE',  'gform_custom.php');
+define('GFORM_CUSTOM_DEV_MODE', true);
 
-// require_once MY_PLUGIN_PATH . 'vendor/autoload.php';
+// require_once GFORM_CUSTOM_PATH . 'vendor/autoload.php';
 
-spl_autoload_register( 'my_plugin' );
+spl_autoload_register( 'gform_custom' );
 
-function my_plugin($class) {
+function gform_custom($class) {
 
-    $prefix = "MyPlugin\\";
+    $prefix = "GformCustom\\";
     $base_dir = __DIR__ . '/src/';
 
     $len = strlen($prefix);
@@ -47,4 +47,4 @@ function my_plugin($class) {
     }
 }
 
-new MyPlugin\My_Plugin;
+new GformCustom\Gform_Custom;
