@@ -1,8 +1,8 @@
 <?php
 
-  namespace GformCustom\Shortcodes;
+  namespace GformCustom\Classes;
 
-  class Shortcode {
+  class Shortcodes {
 
     public function __construct(){
       /////////change test

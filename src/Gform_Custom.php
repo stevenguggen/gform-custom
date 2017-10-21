@@ -1,7 +1,8 @@
 <?php
 
 namespace GformCustom;
-use GformCustom\Shortcodes\Shortcode as Shortcode;
+use GformCustom\Classes\Shortcodes as Shortcodes;
+use GformCustom\Classes\Enqueues as Enqueues;
 
 class Gform_Custom {
 
@@ -20,7 +21,8 @@ class Gform_Custom {
 	}
 
 	protected function _init(){
-    new Shortcode;
+    new Shortcodes;
+    new Enqueues;
 	}
 
 }
