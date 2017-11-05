@@ -6,7 +6,7 @@
 
     public function __construct(){
 
-      $this->register_df_scripts();
+      $this->register_scripts();
 
       //enqueue default scripts
       $this->enqueue_default_scripts();
@@ -15,7 +15,7 @@
       $this->localize_js_vars();
 
       //register styles
-      $this->register_df_styles();
+      $this->register_styles();
 
       // enqueue default styles
       $this->enqueue_default_styles();
@@ -23,7 +23,7 @@
     }
 
 
-    public function register_df_styles(){
+    public function register_styles(){
       wp_register_style('gc-styles-css', GFORM_CUSTOM_URL . "dist/css/style.css");
 
     }
@@ -32,7 +32,7 @@
       wp_enqueue_style('gc-styles-css');
     }
 
-    public function register_df_scripts(){
+    public function register_scripts(){
 
       //default scripts and object classes
       wp_register_script('gc-scripts-js', GFORM_CUSTOM_URL . 'dist/js/scripts.js', array('jquery','wp-api'));
