@@ -3,6 +3,8 @@
 namespace GformCustom;
 use GformCustom\Classes\Shortcodes as Shortcodes;
 use GformCustom\Classes\Enqueues as Enqueues;
+use GformCustom\Classes\Gforms as Gforms;
+
 
 class Gform_Custom {
 
@@ -23,6 +25,7 @@ class Gform_Custom {
 	protected function _init(){
     new Shortcodes;
     new Enqueues;
+    new Gforms;
 	}
 
 }
