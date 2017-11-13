@@ -1,0 +1,28 @@
+{
+  "name": "loanbase-toolbox",
+  "version": "1.0.0",
+  "description": "loanbase toolbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyberworld-builders/gform-custom.git"
+  },
+  "keywords": [
+    "gravity",
+    "forms"
+  ],
+  "author": "jay long",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyberworld-builders/gform-custom/issues"
+  },
+  "homepage": "https://github.com/Cyberworld-builders/gform-custom#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
